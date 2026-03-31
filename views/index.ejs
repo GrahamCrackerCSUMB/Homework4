@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('partials/head.ejs') %>
+<style>
+
+</style>
+</head>
+<body>
+        <header>
+            <h1>What is Scrum?</h1>
+        </header>
+        <%- include('partials/nav.ejs') %>
+        <hr>
+
+
+        <div class="quote-box">
+            <h2>Quote of the Day</h2>
+
+            <p>"<%= quote.body %>"</p> 
+            <p>- <%= quote.by %></p>
+        </div>
+  <main>
+        <div class="top">
+
+            <div class="scrum_text">
+                <p> Scrum is a framework that helps teams create adaptive solutions for complex problems. 
+                    It is often used by developers in software development. Scrum is based on the values of transparency, 
+                    inspection and adaption. This ensures that work is visible to all, monitored for progress, 
+                    and adjusted as needed.</p>
+            </div>
+
+            <figure>
+                <img src="img/scrum_process.jpg" alt="Scrum Process" id="scrum_process">
+            </figure>
+
+            <div class="scrum_quote">
+
+                <p>“In a nutshell, Scrum requires a Scrum Master to foster an environment where:</p>
+
+                <ol id="ScrumSteps">
+                    <li>A Product Owner orders the work for a complex problem into a Product Backlog.</li>
+                    <li>The Scrum Team turns a selection of the work into an Increment of value during a Sprint.</li>
+                    <li>The Scrum Team and its stakeholders inspect the results and adjust for the next Sprint.</li>
+                    <li><em>Repeat</em> (Schwaber and Sutherland)”</li>
+                </ol>
+            </div>
+
+
+        </div>
+
+            <p>
+            <h2>Citations:</h2><br>
+            <a href="https://scrumguides.org/scrum-guide.html" target="_blank">
+            Schwaber, Ken, and Jeff Sutherland. "The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game." Nov. 2020, https://scrumguides.org/scrum-guide.html.
+            </a>
+            <br>
+            <a href="https://www.pm-partners.com.au/insights/the-agile-journey-a-scrum-overview/" target="_blank">
+            PM-Partners Group. “The Agile Journey: A Scrum Overview.” <em>PM-Partners</em>, 25 Mar. 2024, https://www.pm-partners.com.au/insights/the-agile-journey-a-scrum-overview/.
+            </a>
+        
+        </main>
+<%- include('partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+header, main, nav, footer {
+    text-align:center;
+}
+
+nav a { /* Links within "nav" container*/
+    padding:15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /*Removes underline*/
+    color: white; /*By default, links are blue*/
+}
+
+nav a:hover { /*psuedo class*/
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: .9s; /*Transition effet*/
+}
+
+nav a.active{
+    font-weight: bold;
+    color: red;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    margin:0px auto;
+    color: white;
+}
+
+td{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong{
+    color: white;
+}
+
+#table-header {
+    background-color: #0bc521;
+}
+
+.table-row{
+    background-color: #1dbd58;
+}
+
+ul {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.what_is{
+    color:yellow;
+}
+
+footer {
+    justify-content: center;
+    font-size: .8em;
+    color: green
+}
+
+figure img{
+    display: block;
+    margin: 0 auto;
+}
+
+#ScrumSteps {
+    display: inline-block;
+    text-align: left;
+}
+
+.scrum_text{
+    width: 300px;
+}
+
+#scrum_team_roles {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#scrum_events {
+    width: 300px;
+    height: auto;
+}
+
+#scrum_artifacts {
+    width: 300px;
+    height: auto;
+}
+.scrum_quote {
+    width: 300px;
+    text-align: center;
+}
+
+#scrum_process {
+    width: 300px;
+    height:auto
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.top div {
+    max-width: 500px;
+}
+
+
+.quote-box {
+    text-align: center; 
+    margin: 40px auto;
+    max-width: 600px;
+}

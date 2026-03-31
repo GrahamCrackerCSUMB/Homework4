@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head.ejs') %>
+</head>
+<body>
+
+        <header>
+            <h1>What is Scrum?</h1>
+        </header>
+
+        <hr>
+
+        <%- include('partials/nav.ejs') %>
+
+        <br>
+        <br>
+
+        <div class="quote-box">
+            <h2>Quote of the Day</h2>
+
+            <p>"<%= quote.body %>"</p> 
+            <p>- <%= quote.by %></p>
+        </div>
+
+        <figure>
+            <img src="img/scrum_events.png" alt="Scrum Events" id="scrum_events">
+        </figure>
+
+        <div id="content">
+            <table>
+                <tr id="table-header">
+                    <td><strong>Event</strong></td>
+                    <td><strong>Description</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Sprint planning</td>
+                    <td>A meeting where the team figures out what they want to do in the next Sprint. The 
+                        product owner discusses what the goal of the sprint is, and then developers select 
+                        items for the backlog to accomplish this sprint. The team then make a plan for what 
+                        they want to accomplish. This can often be done by breaking down larger project or 
+                        goals into smaller projects.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Sprint</td>
+                    <td>A sprint is a fixed amount of time, for instance, two weeks or a month. Sprints occur 
+                        repetitively, one right after another. You can consider each Sprint a short project.</td>                
+
+                <tr class="table-row">
+                    <td>Daily Scrum</td>
+                    <td>A daily meeting of around 15 minutes. It focuses on progress towards whatever the 
+                        goal is for the sprint and create an actionable plan for the next day of work.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Sprint Review</td>
+                    <td>A meeting where you inspect the outcome of the Sprint. Developers demonstrate their 
+                        work and evaluate progress towards the ultimate goal. This is a working session and 
+                        everyone collaborates on what to do next.</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Sprint Retrospective</td>
+                    <td>The team examines how the last sprint went and discusses what went well, what went 
+                        wrong, and any problem that arose. This is a chance to think about helpful changes to be more effective in future sprints.</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <p>
+            <h2>Citations:</h2><br>
+            <a href="https://scrumguides.org/scrum-guide.html" target="_blank">
+            Schwaber, Ken, and Jeff Sutherland. "The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game." Nov. 2020, https://scrumguides.org/scrum-guide.html.
+            </a>
+            <br>
+            <a href="https://agilemania.com/what-is-scrum" target="_blank">
+            Singh, Naveen Kumar. “What Is Scrum? – Principles, Events, Benefits, and Accountability.” <em>Agilemania</em>, 1 Aug. 2016, https://agilemania.com/what-is-scrum.
+            </a>
+
+        </div>
+
+    <%- include('partials/footer.ejs') %>
+        
+    </body>
+</html>
