@@ -141,3 +141,8 @@ h1 {
     margin: 40px auto;
     max-width: 600px;
 }
+
+.nasa-img {
+    width: 400px;
+    height: auto;
+}
